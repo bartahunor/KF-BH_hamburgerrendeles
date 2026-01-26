@@ -1,0 +1,12 @@
+sajtburger; uborka, hagyma; ketchup, mustár; kicsi
+bigmac; hagyma, uborka, saláta; McChicken; nagy
+chiliburger; jalapeno, uborka; mustár; közepes
+crispychicken; saláta, paradicsom; majonéz; nagy
+plantbased; paradicsom, saláta, hagyma, uborka; majonéz; közepes
+duplacheesy; kukorica, paradicsom; mustár, majonéz; kicsi 
+
+
+
+
+
+

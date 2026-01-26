@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\asztalfejl\\KF-BH-hamburger_rendeles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07A18210-E8EA-49A1-873A-96C97B8E3EB0}|KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles.csproj|h:\\asztalfejl\\kf-bh-hamburger_rendeles\\kf-bh-hamburger_rendeles\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07A18210-E8EA-49A1-873A-96C97B8E3EB0}|KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles.csproj|solutionrelative:kf-bh-hamburger_rendeles\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A18210-E8EA-49A1-873A-96C97B8E3EB0}|KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles.csproj|h:\\asztalfejl\\kf-bh-hamburger_rendeles\\kf-bh-hamburger_rendeles\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A18210-E8EA-49A1-873A-96C97B8E3EB0}|KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles.csproj|solutionrelative:kf-bh-hamburger_rendeles\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "H:\\asztalfejl\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs",
+              "RelativeDocumentMoniker": "KF-BH-hamburger_rendeles\\Form1.cs",
+              "ToolTip": "H:\\asztalfejl\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs",
+              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAADwv0IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T12:50:14.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "H:\\asztalfejl\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs",
+              "RelativeDocumentMoniker": "KF-BH-hamburger_rendeles\\Form1.cs",
+              "ToolTip": "H:\\asztalfejl\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs [Design]",
+              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T12:40:29.246Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

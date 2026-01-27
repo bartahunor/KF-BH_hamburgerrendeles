@@ -89,7 +89,7 @@
             this.label1.Size = new System.Drawing.Size(225, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hamburger rendelés";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // groupBox1
             // 
@@ -133,7 +133,6 @@
             this.groupBox2.Size = new System.Drawing.Size(393, 140);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // groupBox3
             // 
@@ -170,7 +169,6 @@
             this.megrendelem.TabIndex = 0;
             this.megrendelem.Text = "MEGRENDELEM";
             this.megrendelem.UseVisualStyleBackColor = false;
-            this.megrendelem.Click += new System.EventHandler(this.megrendelem_Click);
             // 
             // kezdemelorol
             // 
@@ -180,7 +178,6 @@
             this.kezdemelorol.TabIndex = 0;
             this.kezdemelorol.Text = "KEZDEM ELŐRÖL";
             this.kezdemelorol.UseVisualStyleBackColor = true;
-            this.kezdemelorol.Click += new System.EventHandler(this.kezdemelorol_Click);
             // 
             // label2
             // 
@@ -191,7 +188,7 @@
             this.label2.Size = new System.Drawing.Size(116, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Megrendelő neve:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+
             // 
             // nev
             // 
@@ -201,7 +198,7 @@
             this.nev.Name = "nev";
             this.nev.Size = new System.Drawing.Size(0, 13);
             this.nev.TabIndex = 1;
-            this.nev.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // label3
             // 
@@ -212,7 +209,7 @@
             this.label3.Size = new System.Drawing.Size(169, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Megrendelt hamburger ára:";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
+
             // 
             // ar
             // 
@@ -223,7 +220,7 @@
             this.ar.Name = "ar";
             this.ar.Size = new System.Drawing.Size(0, 16);
             this.ar.TabIndex = 1;
-            this.ar.Click += new System.EventHandler(this.label2_Click);
+
             // 
             // pictureBox1
             // 
@@ -335,7 +332,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Kicsi";
             this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+
             // 
             // radioButton5
             // 
@@ -379,7 +376,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Saláta";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+
             // 
             // checkBox2
             // 
@@ -400,7 +397,7 @@
             this.checkBox3.TabIndex = 0;
             this.checkBox3.Text = "Jalapeno";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+
             // 
             // checkBox4
             // 
@@ -411,7 +408,7 @@
             this.checkBox4.TabIndex = 0;
             this.checkBox4.Text = "Hagyma";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+
             // 
             // checkBox5
             // 
@@ -432,7 +429,7 @@
             this.checkBox6.TabIndex = 0;
             this.checkBox6.Text = "Kukorica";
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+
             // 
             // radioButton7
             // 
@@ -476,7 +473,7 @@
             this.checkBox7.TabIndex = 0;
             this.checkBox7.Text = "Ketchup";
             this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+
             // 
             // checkBox8
             // 
@@ -487,7 +484,7 @@
             this.checkBox8.TabIndex = 0;
             this.checkBox8.Text = "Barbecue";
             this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+
             // 
             // checkBox9
             // 
@@ -518,7 +515,7 @@
             this.checkBox11.TabIndex = 0;
             this.checkBox11.Text = "Fokhagymás";
             this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+
             // 
             // checkBox12
             // 
@@ -529,7 +526,7 @@
             this.checkBox12.TabIndex = 0;
             this.checkBox12.Text = "Majonéz";
             this.checkBox12.UseVisualStyleBackColor = true;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+
             // 
             // Form1
             // 

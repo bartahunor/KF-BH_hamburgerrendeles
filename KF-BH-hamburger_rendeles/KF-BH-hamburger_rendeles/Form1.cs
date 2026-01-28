@@ -26,7 +26,26 @@ namespace KF_BH_hamburger_rendeles
                 Bankkartya_generalo();
             }
 
+            radioButton1.Text = hamburgerek[0].nev;
+            radioButton3.Text = hamburgerek[1].nev;
+            radioButton5.Text = hamburgerek[2].nev;
+            radioButton7.Text = hamburgerek[3].nev;
+            radioButton8.Text = hamburgerek[4].nev;
+            radioButton9.Text = hamburgerek[5].nev;
+
+            radioButton1.CheckedChanged += Hamburger_CheckedChanged;
+            radioButton3.CheckedChanged += Hamburger_CheckedChanged;
+            radioButton5.CheckedChanged += Hamburger_CheckedChanged;
+            radioButton7.CheckedChanged += Hamburger_CheckedChanged;
+            radioButton8.CheckedChanged += Hamburger_CheckedChanged;
+            radioButton9.CheckedChanged += Hamburger_CheckedChanged;
+
+            radioButton1.Checked = true;
+
         }
+
+
+
 
         private void Adatokbetoltese()
         {
@@ -49,6 +68,122 @@ namespace KF_BH_hamburger_rendeles
             }
         }
 
+        private void Hamburger_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Checked) 
+            {
+                checkBox1.Checked = false;
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+                checkBox4.Checked = false;
+                checkBox5.Checked = false;
+                checkBox6.Checked = false;
+                checkBox7.Checked = false;
+                checkBox8.Checked = false;
+                checkBox9.Checked = false;
+                checkBox10.Checked = false;
+                checkBox11.Checked = false;
+                checkBox12.Checked = false;
+
+                Hamburger kivalasztott = KivalasztottHamburger();
+                if (kivalasztott != null)
+                {
+                    Zoldsegek_valasztas(kivalasztott);
+                    Szosz_valasztas(kivalasztott);
+                    Meret_valasztas(kivalasztott);
+                }
+            }
+        }
+
+        private Hamburger KivalasztottHamburger()
+        {
+            if (radioButton1.Checked) return hamburgerek[0];
+            if (radioButton3.Checked) return hamburgerek[1];
+            if (radioButton5.Checked) return hamburgerek[2];
+            if (radioButton7.Checked) return hamburgerek[3];
+            if (radioButton8.Checked) return hamburgerek[4];
+            if (radioButton9.Checked) return hamburgerek[5];
+            return null;
+        }
+
+        private void Zoldsegek_valasztas(Hamburger hamburger)
+        {
+            for (int i = 0; i < hamburger.zoldsegek.Count(); i++)
+            {
+                if (hamburger.zoldsegek[i] == "saláta")
+                {
+                    checkBox1.Checked = true;
+                }
+                if (hamburger.zoldsegek[i] == "paradicsom")
+                {
+                    checkBox2.Checked = true;
+                }
+                if (hamburger.zoldsegek[i] == "jalapeno")
+                {
+                    checkBox3.Checked = true;
+                }
+                if (hamburger.zoldsegek[i] == "hagyma")
+                {
+                    checkBox4.Checked = true;
+                }
+                if (hamburger.zoldsegek[i] == "uborka")
+                {
+                    checkBox5.Checked = true;
+                }
+                if (hamburger.zoldsegek[i] == "kukorica")
+                {
+                    checkBox6.Checked = true;
+                }
+            }
+        }
+
+        private void Szosz_valasztas(Hamburger hamburger)
+        {
+            for (int i = 0; i < hamburger.szoszok.Count(); i++)
+            {
+                if (hamburger.szoszok[i] == "ketchup")
+                {
+                    checkBox7.Checked = true;
+                }
+                if (hamburger.szoszok[i] == "McChicken")
+                {
+                    checkBox8.Checked = true;
+                }
+                if (hamburger.szoszok[i] == "mustár")
+                {
+                    checkBox9.Checked = true;
+                }
+                if (hamburger.szoszok[i] == "barbecue")
+                {
+                    checkBox10.Checked = true;
+                }
+                if (hamburger.szoszok[i] == "fokhagymás")
+                {
+                    checkBox11.Checked = true;
+                }
+                if (hamburger.szoszok[i] == "majonéz")
+                {
+                    checkBox12.Checked = true;
+                }
+            }
+        }
+
+        private void Meret_valasztas(Hamburger hamburger)
+        {
+            if (hamburger.meret == "nagy")
+            {
+                radioButton2.Checked = true;
+            }
+            else if (hamburger.meret == "közepes")
+            {
+                radioButton4.Checked = true;
+            }
+            else 
+            {
+                radioButton6.Checked = true;
+            }
+        }
 
         public class Hamburger
         {

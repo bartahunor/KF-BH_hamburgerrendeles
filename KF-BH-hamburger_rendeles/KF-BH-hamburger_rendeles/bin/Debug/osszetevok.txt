@@ -1,6 +1,6 @@
-sajtburger;uborka,hagyma;ketchup,mustár;kicsi
-bigmac;hagyma,uborka,saláta;McChicken;nagy
-chiliburger;jalapeno,uborka;mustár;közepes
-crispychicken;saláta,paradicsom;majonéz;nagy
-plantbased;paradicsom,saláta,hagyma,uborka;majonéz;közepes
-duplacheesy;kukorica,paradicsom;mustár,majonéz;kicsi 
+Sajtburger;uborka,hagyma;ketchup,mustár;kicsi
+Big Mac;hagyma,uborka,saláta;McChicken;nagy
+Chili burger;jalapeno,uborka;fokhagymás,mustár;közepes
+Crispy Chicken;saláta,paradicsom;barbecue,majonéz;nagy
+Plant-based;paradicsom,saláta,hagyma,uborka;fokhagymás;közepes
+Dupla Cheesy;kukorica,paradicsom;mustár,majonéz;kicsi 

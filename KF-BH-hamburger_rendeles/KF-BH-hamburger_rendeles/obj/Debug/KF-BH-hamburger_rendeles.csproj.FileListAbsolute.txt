@@ -8,3 +8,14 @@ C:\Sajat\informatika\c#\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-h
 C:\Sajat\informatika\c#\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.exe
 C:\Sajat\informatika\c#\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.pdb
 C:\Sajat\informatika\c#\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF_BH_hamburger_rendeles.Form1.resources
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\bin\Debug\KF-BH-hamburger_rendeles.exe.config
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\bin\Debug\KF-BH-hamburger_rendeles.exe
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\bin\Debug\KF-BH-hamburger_rendeles.pdb
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.AssemblyReference.cache
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.exe.config
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF_BH_hamburger_rendeles.Form1.resources
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF_BH_hamburger_rendeles.Properties.Resources.resources
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.GenerateResource.cache
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.CoreCompileInputs.cache
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.exe
+C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.pdb

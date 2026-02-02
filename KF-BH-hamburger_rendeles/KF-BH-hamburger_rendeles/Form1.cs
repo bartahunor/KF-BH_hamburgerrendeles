@@ -18,6 +18,7 @@ namespace KF_BH_hamburger_rendeles
         public Form1()
         {
             InitializeComponent();
+
             hamburgerek = new List<Hamburger>();
             bankkartyak = new List<Bankkartya>();
             Adatokbetoltese();
@@ -26,6 +27,7 @@ namespace KF_BH_hamburger_rendeles
                 Bankkartya_generalo();
             }
 
+            
             radioButton1.Text = hamburgerek[0].nev;
             radioButton3.Text = hamburgerek[1].nev;
             radioButton5.Text = hamburgerek[2].nev;
@@ -33,6 +35,7 @@ namespace KF_BH_hamburger_rendeles
             radioButton8.Text = hamburgerek[4].nev;
             radioButton9.Text = hamburgerek[5].nev;
 
+            
             radioButton1.CheckedChanged += Hamburger_CheckedChanged;
             radioButton3.CheckedChanged += Hamburger_CheckedChanged;
             radioButton5.CheckedChanged += Hamburger_CheckedChanged;
@@ -40,7 +43,30 @@ namespace KF_BH_hamburger_rendeles
             radioButton8.CheckedChanged += Hamburger_CheckedChanged;
             radioButton9.CheckedChanged += Hamburger_CheckedChanged;
 
-            radioButton1.Checked = true;
+            
+            radioButton1.Checked = false;
+            radioButton3.Checked = false;
+            radioButton5.Checked = false;
+            radioButton7.Checked = false;
+            radioButton8.Checked = false;
+            radioButton9.Checked = false;
+
+            
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
+            checkBox8.Checked = false;
+            checkBox9.Checked = false;
+            checkBox10.Checked = false;
+            checkBox11.Checked = false;
+            checkBox12.Checked = false;
+            pictureBox1.Image = null;
+            label4.Text = "";
+
 
         }
 
@@ -57,22 +83,28 @@ namespace KF_BH_hamburger_rendeles
                 List<string> zoldsegek = adatok[1].Split(',').ToList();
                 List<string> szoszok = adatok[2].Split(',').ToList();
                 string meret = adatok[3];
-                Hamburger ujHamburger = new Hamburger()
+                string leiras = adatok[4]; 
+
+                string kepPath = Path.Combine(Application.StartupPath, nev + ".png");
+
+                hamburgerek.Add(new Hamburger()
                 {
                     nev = nev,
                     zoldsegek = zoldsegek,
                     szoszok = szoszok,
-                    meret = meret
-                };
-                hamburgerek.Add(ujHamburger);
+                    meret = meret,
+                    kepPath = kepPath,
+                    leiras = leiras
+                });
             }
         }
 
         private void Hamburger_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            if (rb.Checked) 
+            if (rb.Checked)
             {
+                
                 checkBox1.Checked = false;
                 checkBox2.Checked = false;
                 checkBox3.Checked = false;
@@ -92,6 +124,20 @@ namespace KF_BH_hamburger_rendeles
                     Zoldsegek_valasztas(kivalasztott);
                     Szosz_valasztas(kivalasztott);
                     Meret_valasztas(kivalasztott);
+
+                 
+                    if (File.Exists(kivalasztott.kepPath))
+                    {
+                        pictureBox1.Image = Image.FromFile(kivalasztott.kepPath);
+                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    }
+                    else
+                    {
+                        pictureBox1.Image = null;
+                    }
+
+                    
+                    label4.Text = kivalasztott.leiras;
                 }
             }
         }
@@ -191,6 +237,8 @@ namespace KF_BH_hamburger_rendeles
             public List<string> zoldsegek { get; set; }
             public List<string> szoszok { get; set; }
             public string meret { get; set; }
+            public string kepPath { get; set; }
+            public string leiras { get; set; }
         }
 
         public class Bankkartya
@@ -252,6 +300,49 @@ namespace KF_BH_hamburger_rendeles
             bankkartyak.Add(ujKartya);
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void kezdemelorol_Click(object sender, EventArgs e)
+        {
+
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            radioButton5.Checked = false;
+            radioButton6.Checked = false;
+            radioButton7.Checked = false;
+            radioButton8.Checked = false;
+            radioButton9.Checked = false;
+
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
+            checkBox8.Checked = false;
+            checkBox9.Checked = false;
+            checkBox10.Checked = false;
+            checkBox11.Checked = false;
+            checkBox12.Checked = false;
+            pictureBox1.Image = null;
+            label4.Text = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

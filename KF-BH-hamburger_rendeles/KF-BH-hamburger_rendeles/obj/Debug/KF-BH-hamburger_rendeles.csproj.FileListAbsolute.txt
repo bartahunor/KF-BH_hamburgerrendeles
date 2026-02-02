@@ -19,3 +19,14 @@ C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj
 C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.CoreCompileInputs.cache
 C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.exe
 C:\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.pdb
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\bin\Debug\KF-BH-hamburger_rendeles.exe.config
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\bin\Debug\KF-BH-hamburger_rendeles.exe
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\bin\Debug\KF-BH-hamburger_rendeles.pdb
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.AssemblyReference.cache
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.exe.config
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF_BH_hamburger_rendeles.Form1.resources
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF_BH_hamburger_rendeles.Properties.Resources.resources
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.GenerateResource.cache
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.csproj.CoreCompileInputs.cache
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.exe
+C:\Users\KeseruFruzsina\Documents\KF-BH_hamburgerrendeles\KF-BH-hamburger_rendeles\KF-BH-hamburger_rendeles\obj\Debug\KF-BH-hamburger_rendeles.pdb

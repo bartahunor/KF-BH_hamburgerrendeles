@@ -344,5 +344,10 @@ namespace KF_BH_hamburger_rendeles
         {
 
         }
+
+        private void név_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

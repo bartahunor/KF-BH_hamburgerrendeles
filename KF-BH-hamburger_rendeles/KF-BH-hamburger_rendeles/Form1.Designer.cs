@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.nev = new System.Windows.Forms.Label();
             this.ar = new System.Windows.Forms.Label();
@@ -76,7 +77,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -95,9 +98,10 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(1, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 51);
+            this.label1.Size = new System.Drawing.Size(415, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hamburger rendelés";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
@@ -110,13 +114,23 @@
             this.groupBox1.Controls.Add(this.megrendeloneve);
             this.groupBox1.Location = new System.Drawing.Point(0, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(410, 409);
+            this.groupBox1.Size = new System.Drawing.Size(416, 409);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(163, -1);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 5;
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Orange;
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.nev);
             this.groupBox4.Controls.Add(this.ar);
             this.groupBox4.Controls.Add(this.label3);
@@ -187,6 +201,7 @@
             this.megrendelem.TabIndex = 0;
             this.megrendelem.Text = "MEGRENDELEM";
             this.megrendelem.UseVisualStyleBackColor = false;
+            this.megrendelem.Click += new System.EventHandler(this.megrendelem_Click);
             // 
             // groupBox3
             // 
@@ -502,7 +517,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(475, 106);
+            this.pictureBox1.Location = new System.Drawing.Point(475, 117);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(266, 242);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -513,10 +528,11 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(475, 351);
+            this.label4.Location = new System.Drawing.Point(475, 367);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(266, 72);
             this.label4.TabIndex = 3;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // groupBox9
             // 
@@ -529,9 +545,9 @@
             this.groupBox9.Controls.Add(this.label7);
             this.groupBox9.Controls.Add(this.label6);
             this.groupBox9.Controls.Add(this.label5);
-            this.groupBox9.Location = new System.Drawing.Point(407, 1);
+            this.groupBox9.Location = new System.Drawing.Point(416, 28);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(394, 71);
+            this.groupBox9.Size = new System.Drawing.Size(382, 83);
             this.groupBox9.TabIndex = 4;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Bankkártya adatok:";
@@ -559,9 +575,8 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(280, 54);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 13);
+            this.label12.Size = new System.Drawing.Size(0, 13);
             this.label12.TabIndex = 0;
-            this.label12.Text = "Bakkártya szám:";
             this.label12.Click += new System.EventHandler(this.label8_Click);
             // 
             // label8
@@ -569,9 +584,8 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(280, 28);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 13);
+            this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Bakkártya szám:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label10
@@ -579,9 +593,8 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(113, 54);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 13);
+            this.label10.Size = new System.Drawing.Size(0, 13);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Bakkártya szám:";
             // 
             // label7
             // 
@@ -597,9 +610,8 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(113, 28);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 13);
+            this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Bakkártya szám:";
             // 
             // label5
             // 
@@ -610,13 +622,35 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Bakkártya szám:";
             // 
-            // comboBox1
+            // label13
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(163, -1);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(192, 82);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "label13";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label14.Location = new System.Drawing.Point(134, 59);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 13);
+            this.label14.TabIndex = 3;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.RosyBrown;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.Location = new System.Drawing.Point(413, 1);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(394, 24);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "FONTOS! Plusz feltétenként 100FT felszámítunk\r\n";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -624,6 +658,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
@@ -703,6 +738,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 

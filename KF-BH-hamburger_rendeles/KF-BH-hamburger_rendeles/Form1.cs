@@ -15,6 +15,9 @@ namespace KF_BH_hamburger_rendeles
     {
         private List<Hamburger> hamburgerek;
         private List<Bankkartya> bankkartyak;
+        private Random rnd = new Random();
+        private int aktualisAlapar = 0;
+        private int aktualisVegosszeg = 0;
         public Form1()
         {
             InitializeComponent();
@@ -26,8 +29,15 @@ namespace KF_BH_hamburger_rendeles
             {
                 Bankkartya_generalo();
             }
+            comboBox1.DataSource = bankkartyak;
+            comboBox1.DisplayMember = "nev";
+            comboBox1.ValueMember = "szam";
+            comboBox1.SelectedIndex = -1;
 
-            
+
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+
+
             radioButton1.Text = hamburgerek[0].nev;
             radioButton3.Text = hamburgerek[1].nev;
             radioButton5.Text = hamburgerek[2].nev;
@@ -68,6 +78,19 @@ namespace KF_BH_hamburger_rendeles
             label4.Text = "";
 
 
+            checkBox1.CheckedChanged += Extra_CheckedChanged;
+            checkBox2.CheckedChanged += Extra_CheckedChanged;
+            checkBox3.CheckedChanged += Extra_CheckedChanged;
+            checkBox4.CheckedChanged += Extra_CheckedChanged;
+            checkBox5.CheckedChanged += Extra_CheckedChanged;
+            checkBox6.CheckedChanged += Extra_CheckedChanged;
+            checkBox7.CheckedChanged += Extra_CheckedChanged;
+            checkBox8.CheckedChanged += Extra_CheckedChanged;
+            checkBox9.CheckedChanged += Extra_CheckedChanged;
+            checkBox10.CheckedChanged += Extra_CheckedChanged;
+            checkBox11.CheckedChanged += Extra_CheckedChanged;
+            checkBox12.CheckedChanged += Extra_CheckedChanged;
+
         }
 
 
@@ -84,6 +107,7 @@ namespace KF_BH_hamburger_rendeles
                 List<string> szoszok = adatok[2].Split(',').ToList();
                 string meret = adatok[3];
                 string leiras = adatok[4]; 
+                int ar = int.Parse(adatok[5]);
 
                 string kepPath = Path.Combine(Application.StartupPath, nev + ".png");
 
@@ -94,7 +118,9 @@ namespace KF_BH_hamburger_rendeles
                     szoszok = szoszok,
                     meret = meret,
                     kepPath = kepPath,
-                    leiras = leiras
+                    leiras = leiras,
+                    ar = ar
+
                 });
             }
         }
@@ -138,8 +164,41 @@ namespace KF_BH_hamburger_rendeles
 
                     
                     label4.Text = kivalasztott.leiras;
+                    aktualisAlapar = kivalasztott.ar;
+                    SzamolVegosszeg();
                 }
             }
+        }
+
+        private void Extra_CheckedChanged(object sender, EventArgs e)
+        {
+            if (aktualisAlapar > 0)
+            {
+                SzamolVegosszeg();
+            }
+        }
+        private void SzamolVegosszeg()
+        {
+            int vegosszeg = aktualisAlapar;
+
+            // Zöldségek
+            if (checkBox1.Checked) vegosszeg += 100;
+            if (checkBox2.Checked) vegosszeg += 100;
+            if (checkBox3.Checked) vegosszeg += 100;
+            if (checkBox4.Checked) vegosszeg += 100;
+            if (checkBox5.Checked) vegosszeg += 100;
+            if (checkBox6.Checked) vegosszeg += 100;
+
+            // Szószok
+            if (checkBox7.Checked) vegosszeg += 100;
+            if (checkBox8.Checked) vegosszeg += 100;
+            if (checkBox9.Checked) vegosszeg += 100;
+            if (checkBox10.Checked) vegosszeg += 100;
+            if (checkBox11.Checked) vegosszeg += 100;
+            if (checkBox12.Checked) vegosszeg += 100;
+
+            aktualisVegosszeg = vegosszeg;
+            label13.Text = vegosszeg + " Ft";
         }
 
         private Hamburger KivalasztottHamburger()
@@ -215,6 +274,27 @@ namespace KF_BH_hamburger_rendeles
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Bankkartya kivalasztott = comboBox1.SelectedItem as Bankkartya;
+
+            if (kivalasztott != null)
+            {
+                label6.Text = kivalasztott.szam;
+                label10.Text = kivalasztott.cvc;
+                label12.Text = kivalasztott.lejarat.ToString("yyyy.MM");
+                label8.Text = kivalasztott.keret + " Ft";
+                label14.Text = kivalasztott.nev;
+            }
+            else
+            {
+                label6.Text = "";
+                label10.Text = "";
+                label12.Text = "";
+                label8.Text = "";
+            }
+        }
+
         private void Meret_valasztas(Hamburger hamburger)
         {
             if (hamburger.meret == "nagy")
@@ -239,6 +319,7 @@ namespace KF_BH_hamburger_rendeles
             public string meret { get; set; }
             public string kepPath { get; set; }
             public string leiras { get; set; }
+            public int ar { get; set; }
         }
 
         public class Bankkartya
@@ -251,7 +332,6 @@ namespace KF_BH_hamburger_rendeles
         }
         private void Bankkartya_generalo()
         {
-            Random rnd = new Random();
             List<string> vezeteknevek = new List<string>
             {
                 "Nagy","Kovács","Tóth","Szabó","Horváth","Varga","Kiss","Molnár","Németh","Farkas",
@@ -333,6 +413,7 @@ namespace KF_BH_hamburger_rendeles
             checkBox12.Checked = false;
             pictureBox1.Image = null;
             label4.Text = "";
+            label13.Text = "";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -348,6 +429,32 @@ namespace KF_BH_hamburger_rendeles
         private void név_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void megrendelem_Click(object sender, EventArgs e)
+        {
+            Bankkartya kartya = comboBox1.SelectedItem as Bankkartya;
+
+            if (kartya == null)
+            {
+                MessageBox.Show("Nincs kiválasztva bankkártya!");
+                return;
+            }
+
+            if (kartya.keret < aktualisVegosszeg)
+            {
+                MessageBox.Show("Nincs elég keret a bankkártyán!");
+            }
+            else
+            {
+                MessageBox.Show("Sikeres rendelés!");
+                kartya.keret -= aktualisVegosszeg;
+            }
         }
     }
 }

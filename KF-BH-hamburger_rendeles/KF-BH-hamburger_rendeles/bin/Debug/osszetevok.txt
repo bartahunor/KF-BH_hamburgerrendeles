@@ -1,6 +1,6 @@
-Sajtburger;uborka,hagyma;ketchup,mustár;kicsi;Szaftos húspogácsa olvadós sajttal, ropogós uborkával és friss hagymával, mustárral és ketchup-pal fűszerezve.
-Big Mac;hagyma,uborka,saláta;McChicken;nagy;Ikonikus dupla rétegű hamburger, friss salátával, hagymával és uborkával, McChicken szósszal koronázva.
-Chili burger;jalapeno,uborka;fokhagymás,mustár;közepes;Csípős jalapeno és friss uborka találkozása lédús húspogácsával, fokhagymás és mustáros szósszal.
-Crispy Chicken;saláta,paradicsom;barbecue,majonéz;nagy;Ropogós csirkemell, friss saláta és paradicsom, barbecue és majonézes öntettel a tökéletes ízkombinációért.
-Plant-based;paradicsom,saláta,hagyma,uborka;fokhagymás;közepes;Növényi alapú burger, friss paradicsom, saláta, hagyma és uborka, fokhagymás szósszal.
-Dupla Cheesy;kukorica,paradicsom;mustár,majonéz;kicsi;Dupla sajt, friss kukorica és paradicsom, mustáros és majonézes szósszal – a sajtimádók álma.
+Sajtburger;uborka,hagyma;ketchup,mustár;kicsi;Szaftos húspogácsa olvadós sajttal, ropogós uborkával és friss hagymával, mustárral és ketchup-pal fűszerezve.;600
+Big Mac;hagyma,uborka,saláta;McChicken;nagy;Ikonikus dupla rétegű hamburger, friss salátával, hagymával és uborkával, McChicken szósszal koronázva.;1300
+Chili burger;jalapeno,uborka;fokhagymás,mustár;közepes;Csípős jalapeno és friss uborka találkozása lédús húspogácsával, fokhagymás és mustáros szósszal.;1800
+Crispy Chicken;saláta,paradicsom;barbecue,majonéz;nagy;Ropogós csirkemell, friss saláta és paradicsom, barbecue és majonézes öntettel a tökéletes ízkombinációért.;1700
+Plant-based;paradicsom,saláta,hagyma,uborka;fokhagymás;közepes;Növényi alapú burger, friss paradicsom, saláta, hagyma és uborka, fokhagymás szósszal.;1200
+Dupla Cheesy;kukorica,paradicsom;mustár,majonéz;kicsi;Dupla sajt, friss kukorica és paradicsom, mustáros és majonézes szósszal – a sajtimádók álma.;1500

@@ -283,7 +283,7 @@ namespace KF_BH_hamburger_rendeles
                 label6.Text = kivalasztott.szam;
                 label10.Text = kivalasztott.cvc;
                 label12.Text = kivalasztott.lejarat.ToString("yyyy.MM");
-                label8.Text = kivalasztott.keret + " Ft";
+                label8.Text = kivalasztott.keret.ToString("N0") + " Ft";
                 label14.Text = kivalasztott.nev;
             }
             else
@@ -358,10 +358,22 @@ namespace KF_BH_hamburger_rendeles
             };
             string nev = vezeteknevek[rnd.Next(vezeteknevek.Count)] + " " + keresztnevek[rnd.Next(keresztnevek.Count)];
             string szam = "";
-            for (int i = 0; i < 16; i++)
+            for (int i = 1; i < 20; i++)
             {
-                szam += rnd.Next(0, 10).ToString();
+                if (i % 5 == 0 && i != 20 && i != 0)
+                {
+                    szam += " ";
+                }
+                else
+                {
+                    szam += rnd.Next(0, 10).ToString();
+                }
+                    
+
             }
+
+
+
             DateTime lejarat = DateTime.Now.AddYears(3);
             string cvc = "";
             for (int i = 0; i < 3; i++)
@@ -416,25 +428,10 @@ namespace KF_BH_hamburger_rendeles
             label13.Text = "";
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void név_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void megrendelem_Click(object sender, EventArgs e)
         {
@@ -454,6 +451,7 @@ namespace KF_BH_hamburger_rendeles
             {
                 MessageBox.Show("Sikeres rendelés!");
                 kartya.keret -= aktualisVegosszeg;
+                label8.Text = kartya.keret.ToString("N0") + " Ft";
             }
         }
     }

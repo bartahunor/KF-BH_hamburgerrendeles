@@ -46,12 +46,11 @@
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "KF-BH-hamburger_rendeles\\Form1.Designer.cs",
-              "ToolTip": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.Designer.cs*",
-              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.Designer.cs*",
+              "ToolTip": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.Designer.cs",
+              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.Designer.cs",
               "ViewState": "AgIAAEQCAAAAAAAAAAArwFkCAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T19:09:18.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T19:09:18.595Z"
             },
             {
               "$type": "Document",
@@ -59,9 +58,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs",
               "RelativeDocumentMoniker": "KF-BH-hamburger_rendeles\\Form1.cs",
-              "ToolTip": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs*",
-              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.cs*",
-              "ViewState": "AgIAAKsBAAAAAAAAAAAAAK8BAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs",
+              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.cs",
+              "ViewState": "AgIAAKIBAAAAAAAAAAAAAK8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-26T12:50:14.677Z",
               "EditorCaption": ""
@@ -72,11 +71,10 @@
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs",
               "RelativeDocumentMoniker": "KF-BH-hamburger_rendeles\\Form1.cs",
-              "ToolTip": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs [Design]*",
-              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.cs [Design]*",
+              "ToolTip": "C:\\Sajat\\informatika\\c#\\KF-BH_hamburgerrendeles\\KF-BH-hamburger_rendeles\\KF-BH-hamburger_rendeles\\Form1.cs [Design]",
+              "RelativeToolTip": "KF-BH-hamburger_rendeles\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T12:40:29.246Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-26T12:40:29.246Z"
             }
           ]
         }
